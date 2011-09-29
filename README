@@ -1,0 +1,14 @@
+
+****** Build Instructions ******
+cd PHP-Num-Processors
+phpize
+./configure
+make
+sudo make install
+
+add 
+
+extension=num_procs.so
+
+to you php.ini set up and away you go
+
