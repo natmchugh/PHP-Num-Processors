@@ -1,8 +1,8 @@
 --TEST--
-Test the num_processors_avaliable function
+Test the num_processors_configured function
 --FILE--
 <?php
 
-echo "Available processors: ",num_processors_available(),PHP_EOL;
+echo "Configured processors: ",num_processors_configured(),PHP_EOL;
 --EXPECTF--
-Available processors: %d
+Configured processors: %d
