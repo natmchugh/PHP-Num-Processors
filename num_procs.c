@@ -58,7 +58,7 @@ PHP_FUNCTION(num_processors_configured)
         #define _SC_NPROCESSORS_CONF
     #endif
 #endif
-#ifdef _SC_NPROCESSORS_ONLN
+#ifdef _SC_NPROCESSORS_CONF
   nprocs_max = sysconf(_SC_NPROCESSORS_CONF);
 #endif
 	RETURN_LONG(nprocs_max);
