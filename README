@@ -12,3 +12,10 @@ extension=num_procs.so
 
 to you php.ini set up and away you go
 
+there are two functions
+num_processors_available()
+
+and 
+
+num_processors_configured()
+

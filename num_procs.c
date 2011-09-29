@@ -51,11 +51,11 @@ PHP_FUNCTION(num_processors_configured)
 {
   long nprocs_max = -1;
 #ifdef _WIN32
-    #ifndef _SC_NPROCESSORS_ONLN
+    #ifndef _SC_NPROCESSORS_CONF
         SYSTEM_INFO info;
         GetSystemInfo(&info);
         #define sysconf(a) info.dwNumberOfProcessors
-        #define _SC_NPROCESSORS_ONLN
+        #define _SC_NPROCESSORS_CONF
     #endif
 #endif
 #ifdef _SC_NPROCESSORS_ONLN
