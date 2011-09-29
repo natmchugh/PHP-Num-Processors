@@ -1,0 +1,8 @@
+// vim:ft=javascript
+
+ARG_ENABLE("num_procs", "Enable the num procs extension", "no");
+
+if (PHP_NUM_PROCS != "no") {
+	EXTENSION("num_procs", "num_procs.c");
+	AC_DEFINE('NUM_PROCS_WORLD', 1, 'num procs support');
+}
