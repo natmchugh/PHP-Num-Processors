@@ -71,10 +71,9 @@ ZEND_END_ARG_INFO()
 ZEND_BEGIN_ARG_INFO_EX(num_procs_conf_args, 0, 0, 0)
 ZEND_END_ARG_INFO()
 
-static function_entry num_procs_functions[] = {
+zend_function_entry num_procs_functions[] = {
 	PHP_FE(num_processors_available, num_procs_online_args)
 	PHP_FE(num_processors_configured, num_procs_conf_args)
-
 	/* End of functions */
 	{NULL, NULL, NULL}
 };
